@@ -2,8 +2,8 @@ import numpy as np
 from solve import *
 
 r = np.array([[0],
-              [0],
-              [1]])
+              [1],
+              [0]])
 
 def normalizar_phi (phi):
     return phi * (phi.T @ M @ r)*(phi.T @ M @ phi)**(-1)
